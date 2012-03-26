@@ -664,7 +664,7 @@ function defaultDisplay( nodeName ) {
 				shiveddisplay;
 
 			// check that nodeName is in shived list
-		if ( window.html5 && window.html5.elements && window.html5.elements.indexOf( nodeName ) ) {
+		if ( window.html5 && window.html5.elements && window.html5.elements.indexOf( nodeName ) > -1 ) {
 			shiveddisplay = {
 				"article,aside,details,figcaption,figure,footer,header,hgroup,nav,section": "block",
 				"audio": "none",
